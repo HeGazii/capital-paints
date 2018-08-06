@@ -1,0 +1,100 @@
+<nav class="navbar navStyle navbar-fixed-top container-fluid" id="nav-style">
+  
+<!-- Brand and toggle get grouped for better mobile display -->
+<div  id="nav-header">
+    <button type="button" id="nav-btn" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"  (click)="toggleBtn()" style="outline: none;">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" [routerLink]="['/homepage']">
+      <img alt="Brand" id="logo-nav" class="img-responsive logoStyle" src="../assets/images/Capital Logo3.jpg" >
+    </a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div *ngIf="collapsed" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul  class="nav navbar-nav navbar-right">
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/homepage']" (click)="toHome()"  class=" navLink "  translate>Home</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/aboutUs']" (click)="toContact()"  class=" navLink"  translate>About</a></li>
+          <li [routerLinkActive]="['active']"><a [routerLink]="['/products']" (click)="toProducts()"  class="navLink active "  translate>Products</a></li>
+          <li [routerLinkActive]="['active']"><a [routerLink]="['/RandD']" (click)="toRandD()"  class=" navLink"  translate>RD</a></li>
+          <li [routerLinkActive]="['active']"><a [routerLink]="['/contactUs']" (click)="toAbout()"  class=" navLink"  translate>Contact</a></li>
+          <li>
+            <ul class="soc-list">
+              <li><i class="fab fa-facebook soc-icon"></i></li>
+              <li><i class="fab fa-linkedin soc-icon"></i></li>
+              <li><i class="fab fa-twitter soc-icon"></i></li>
+              <li><i class="fab fa-instagram soc-icon"></i></li>
+            </ul>
+          </li>
+          <li>
+            <button *ngIf="toAr && !toEn" class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="img-responsive flag"></button>
+            <button *ngIf="toEn && !toAr" class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="img-responsive flag"></button>
+          </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    <div *ngIf="!mobile" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="soc-list-l">
+            <li><a href="https://www.facebook.com/capital.international.coating/"><i class="fab fa-facebook soc-icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/capital-international-for-coatings/"><i class="fab fa-linkedin soc-icon"></i></a></li>
+            <li><a href="https://twitter.com/Capitalcoats"><i class="fab fa-twitter soc-icon"></i></a></li>
+            <li><a href="https://www.instagram.com/capitalcoats/?hl=en"><i class="fab fa-instagram soc-icon"></i></a></li>
+            <li>
+              <button *ngIf="toAr && !toEn" class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="img-responsive flag"></button>
+              <button *ngIf="toEn && !toAr" class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="img-responsive flag"></button>
+            </li>
+        </ul>      
+      <ul id='nav' class="nav navbar-nav navbar-right">
+              <li [routerLinkActive]="['active']"><a [routerLink]="['/homepage']" (click)="toHome()"  class=" navLink "  translate>Home</a></li>
+              <li [routerLinkActive]="['active']"><a [routerLink]="['/aboutUs']" (click)="toAbout()"  class=" navLink "  translate>About</a></li>
+              <li [routerLinkActive]="['active']"><a [routerLink]="['/products']"  (click)="toProducts()"  class="navLink"  translate>Products</a></li>
+              <li [routerLinkActive]="['active']"><a [routerLink]="['/RandD']" (click)="toRandD()"  class=" navLink"  translate>RD</a></li>
+              <li [routerLinkActive]="['active']"><a [routerLink]="['/contactUs']" (click)="toContact()"  class=" navLink"  translate>Contact</a></li>
+            </ul>
+                
+              
+              
+            
+        </div><!-- /.navbar-collapse -->
+  
+</nav>
+
+<router-outlet></router-outlet>
+
+<!--............................footer section ...........-->
+
+<footer class="footer-sec container-fluid ">
+        
+  <div class="row footer-row">
+      <div class="col-md-4 col-sm-4  footer-col">
+          <a class="footer-logo" href="#">
+              <img alt="Brand" class="logo-img-footer " src="../assets/images/Capital Logo3.jpg">
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-4  footer-col">
+          <div class="footer-txt">
+            <p translate><b>Capital international for coatings</b><br>
+              <b>Address:</b>2th industrial zone, New Borg El Arab, Alexandria, Egypt.<br>
+              <b>Tel:</b> +203 0000000 - Fax: +203 0000000 <br>
+              <b>Send e-mail to:</b> info@Capital-coating.com<br>
+             <b>Operating Hours:Sunday -Thursday:</b> 8:00am – 05:00Pm
+            </p>.
+          </div><br>
+          <ul class="soc-list-footer">
+              <li><a href="https://www.facebook.com/capital.international.coating/"><i class="fab fa-facebook soc-icon"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/capital-international-for-coatings/"><i class="fab fa-linkedin soc-icon"></i></a></li>
+              <li><a href="https://twitter.com/Capitalcoats"><i class="fab fa-twitter soc-icon"></i></a></li>
+              <li><a href="https://www.instagram.com/capitalcoats/?hl=en"><i class="fab fa-instagram soc-icon"></i></a></li>
+          </ul>
+      </div>
+      <div class="col-md-4 col-sm-4  footer-col">
+        <div id="map">
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+        </div>
+    </div>
+  </div>
+</footer>
+

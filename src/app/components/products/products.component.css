@@ -1,0 +1,123 @@
+.products-sec{
+    margin-top: 9em;
+}
+.product-img{
+    width:100%;
+    object-fit: contain;
+    border-radius: 15px;
+    height: 150px;
+}
+.Products-row {
+    margin-top: 4em;
+}
+/*........call button..........*/
+.call{
+    margin-top:3em;
+    margin-bottom: 3em;
+}
+.callBtn{
+    border-radius: 18px;
+    border: 1px solid violet;
+    -webkit-box-shadow: 5px 5px 5px #bbb;
+    box-shadow: 5px 5px 5px #bbb;
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .5s;
+}
+.callBtn:hover{
+   
+   background-color: #ee82ee33;
+    color:#7a51a1;
+}
+/*.fourth section first card (news)..*/
+   .card-col-text{
+    background-color:#661c98;
+    opacity: .6; 
+    color: white;
+    padding: 2em;
+    height: 400px;
+} 
+.news-text{
+    font-size: 35px;
+    line-height: 1.5;
+}
+.news-img{
+    object-fit: fill;
+    height: 400px;
+}
+.card-col-img{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card-text{
+    padding: 10px;
+    font-size: 18px;
+}
+/*...................*/
+.cards.active {
+    box-shadow: 0px 1px 8px 5px #ddd;
+    border-radius: 15px;
+}
+.cards:hover {
+    box-shadow: 0px 1px 8px 5px #ddd;
+    border-radius: 15px;
+}
+.cards{
+    padding: 1em;
+}
+@media  (max-width: 991px){
+    .card-col-text{
+        margin-left: 0;
+        padding: 10px;
+        border: 0;
+        margin-top: 0;
+    }
+    .card-text{
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+   
+   
+}
+
+
+
+@media(max-width:767px){
+    .news-text {
+        font-size: 25px;
+        
+    }
+    
+.card-text{
+        
+		font-size: 14px;
+    }
+    .product-img {
+        
+        height: 128px;
+    }
+}
+@media(max-width:700px){
+    .product-img {
+        
+        height: 110px;
+    }
+}
+@media(max-width:546px){
+    .card-text{
+        font-size: 12.5px;
+        width: 202px;
+    }
+    
+}
+@media(max-width:405px){
+    .card-text{
+        font-size: 10.5px;
+        width: 150px;
+    }
+}
+
+
+

@@ -1,0 +1,44 @@
+<section  class="container products-sec text-center">
+    <div><h1 translate>Products</h1></div>
+    <div><p translate>dumb1</p></div>
+    <div class="row Products-row">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="card cards" routerLinkActive="active">
+               <a class="card-click" [routerLink]="['./Coatex','Automotive']" (click)="hideGrid()"> <img class="card-img-top" src="../../../assets/images/016.png" alt="Card image cap" class="product-img"></a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="card cards" routerLinkActive="active">
+                <a class="card-click" [routerLink]="['./Silver-Star','Automotive']" (click)="hideGrid()"><img class="card-img-top" src="../../../assets/images/silver-star.jpg" alt="Card image cap" class="product-img"></a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="card cards" routerLinkActive="active">
+                <a class="card-click"  [routerLink]="['./Linco','linco']" (click)="hideGrid()"><img class="card-img-top" src="../../../assets/images/lico-logo.jpg" alt="Card image cap" class="product-img"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--routerOutlet-->
+<router-outlet></router-outlet>
+<!--............place router outlet here ............................-->
+<div class="container text-center call">
+    <button [routerLink]="['/contactUs']" routerLinkActive="active" class="btn btn-default btn-secondary mb-2 callBtn" translate>call</button>
+</div>
+<!--..................section four (NEWS)........-->
+<section class=" fifth-sec container-fluid">
+        <div class="card">
+              <div class="card-body">
+                <div class="row card-row">
+                    <div id="newss" class="col-md-6 col-sm-6 col-xs-6 card-col-text">
+                        <span class="news-text head" translate>news</span>
+                        <p class="card-text" translate>newsContent</p>
+                        <a href="#" class="btn btn-primary" translate>Explore</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 card-col-img">
+                        <img class="news-img" src="../../../assets/images/capital news photo.png" width="100%">
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>

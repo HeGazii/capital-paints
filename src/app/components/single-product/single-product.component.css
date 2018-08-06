@@ -1,0 +1,167 @@
+
+.product-sec{
+    margin-top: 9em;
+}
+.product-img{
+    width:100%;
+    object-fit: contain;
+    border-radius: 15px;
+    height: 150px;
+}
+.Products-row {
+    margin-top: 4em;
+}
+.card-btn.active {
+    box-shadow: 0px 1px 8px 5px #ddd;
+    border-radius: 15px;
+}
+.card-btn:hover {
+    box-shadow: 0px 1px 8px 5px #ddd;
+    border-radius: 15px;
+}
+.card-btn {
+    padding: 1em;
+}
+/*.................................................................*/
+.toolTip-sec{
+    margin-top: 4em;
+    margin-bottom: 0em;
+    background-color: black;
+    height: 56px;
+}
+.toolBtn{
+    
+   font-size: 15px;
+    font-weight: 600;
+    
+    outline: none;
+}
+.btn-link.active, .btn-link:active, .open>.dropdown-toggle.btn-link {
+    
+    outline: none;
+    padding: 15px;
+    border: 10px solid ;
+    background-color: #d51a8b;
+    border-bottom-color: #d51a8b;
+    border-left-color: #000000;
+    border-right-color: #000000;
+    border-top-color: #d51a8b;
+    color: black;
+    line-height: 1;
+    width: 148px;
+    border-radius: 11px;
+}
+
+.btn-link{
+    color: #fff;
+    background-color: #fff0;
+    text-decoration: none;
+    line-height: 3;
+}
+.btn-link.toolBtn:hover{
+    color: #7a51a0;
+}
+
+
+.row-arr{
+    margin-top: 3em;
+}
+.btn-link.active.focus, .btn-link.active:focus, .btn-link.active:hover, .btn-link:active.focus, .btn-link:active:focus, .btn-link:active:hover, .open>.dropdown-toggle.btn-link.focus, .open>.dropdown-toggle.btn-link:focus, .open>.dropdown-toggle.btn-link:hover {
+    
+    display: inline;
+    color: black;
+    
+    
+}
+
+/*..........carousel styling.............*/
+.row-cards{
+    margin-bottom: 1em;
+    margin-top: 5em;
+}
+.imgs-card{
+height: 379px;
+overflow-y: scroll;
+border-radius: 15px;
+    border: 1px solid #d51a8b00;
+    margin-bottom: 1em;
+    box-shadow: 2px 3px 6px 2px #d51a8b59;
+padding: 15px
+}
+.carousel-section{
+    margin-bottom: 2em;
+    margin-top: 0em;
+}
+
+.carousel-img{
+    width: 100%;
+  border-radius: 15px;
+  height: 165px;
+}
+h3.card-title {
+    color: #d51a8b;
+    font-weight: 600;
+    font-size: 17px;
+}
+p.card-text {
+    font-size: 15px;
+}
+/*...............................*/
+/*........call button..........*/
+.call{
+    margin-top:3em;
+    margin-bottom: 3em;
+}
+.callBtn{
+    border-radius: 18px;
+    border: 1px solid violet;
+    -webkit-box-shadow: 5px 5px 5px #bbb;
+    box-shadow: 5px 5px 5px #bbb;
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .5s;
+}
+.callBtn:hover{
+   
+   background-color: #ee82ee33;
+    color:#7a51a1;
+}
+@media (max-width:991px) and (min-width:768px){
+    
+    .carousel-img{
+        
+        height: 127px;
+    }
+    .imgs-card{
+        height: 393px;
+        
+        }
+}
+@media(max-width:767px){
+    .imgs-card {
+        height: 368px;
+      
+    }
+    p.card-text {
+        font-size: 13px;
+    }
+    .btn-link.active, .btn-link:active, .open>.dropdown-toggle.btn-link {
+    padding: 12px;
+       width: 105px;
+    }
+    .carousel-img {
+        
+        height: 142px;
+    }
+    .toolBtn{
+    
+        font-size: 13px;
+         
+     }
+    
+     h3.card-title{
+        
+        font-size: 3vh;
+    }
+}

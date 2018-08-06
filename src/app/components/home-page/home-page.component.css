@@ -1,0 +1,372 @@
+/*.....carousel section...*/
+
+body{
+    overflow-x: hidden;
+}
+
+.carousel-control{
+    display: none;
+}
+
+.carousel-img{
+	width: 100%;
+    height: 600px !important;
+    object-fit: cover;
+    opacity: .5;
+    /*filter: contrast(30%);*/
+    
+}
+
+.carousel-sec{
+    position: relative;
+    margin-top: 87px;
+}
+
+.intro{
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.intro h1{
+    font-size: 4em;
+    margin-top: 100px; 
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.intro p{
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 50%;
+    /*
+    background: -webkit-linear-gradient(135deg, #c34d9c, #5f4ea0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    color: #000000;
+}
+
+.intro p::after{
+    content: "’’";
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.intro p::before{
+    content: "‘‘";
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brush{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.brush hr{
+    width: 40%;
+    height: 4px;
+    border: 0;
+    float: left;
+    background: #c34d9c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #c34d9c 0%, #5f4ea0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #c34d9c 0%,#5f4ea0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #c34d9c 0%,#5f4ea0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c34d9c', endColorstr='#5f4ea0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.brush img{
+    width: 10%;
+    object-fit: contain;
+}
+
+.brush hr:last-of-type{
+    float: right;
+}
+
+.proChoice{
+	margin-top: 5em;
+}
+.header-proChoice{
+	font-size: 30px;
+	font-weight: 600;
+	color: #000;
+    margin: 15px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.proChoice-row{
+	margin-top: 2em;
+	margin-bottom: 5em;
+}
+.proChoice-col{
+	height: 250px;
+    border-right: 0;
+    color: rgb(88, 88, 88);
+    font-weight: 600;
+    box-shadow: 0 1px 0 0 #5f4ea0, 0 -1px 0 0 #c34d9c, 1px 0 0 0 #384ea1;
+    transition: .5s;
+}
+
+.proChoice-col:hover .icon-img{
+    transform: scale(1.2,1.2);
+}
+
+.proChoice-col:hover{
+    color: #384ea1;
+    font-weight: 900;
+
+}
+
+.icon-img{
+	margin-top: 2.5em;
+	line-height: 100px;
+    margin-bottom: 2em;
+    width:80px;
+    height: 80px;
+    object-fit: contain;
+    transition: .5s;
+}
+.img-caption{
+	font-size: 25px;
+	font-weight: 300;
+}
+/*second section (our brands)*/
+.brands-row{
+	margin-top: 4em;
+	margin-bottom: 5em;
+}
+.brand-col{
+	height: auto;
+	border-radius: 15px;
+}
+.card-btn:hover {
+    box-shadow: 0px 1px 8px 5px #ddd;
+    border-radius: 15px;
+}
+.card-btn {
+    padding: 1em;
+}
+.product-img{
+    width:100%;
+    object-fit: contain;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.card-img{
+	
+    width: 233px;
+    margin-bottom: 1em;
+    object-fit: contain;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0px 2px 12px 1px #ddd;
+    
+}
+
+
+  .featured-row{
+      margin-top: 3em;
+      margin-bottom: 5em;
+  }
+
+  .pro-img{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20%;
+    border: 1px solid transparent;
+   transition: 0.2s;
+}
+ .pro-img:hover{
+    border-radius: 50%;
+    border: 8px solid mediumvioletred;
+    transition: 0.2s;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #9C27B0;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #9C27B0;
+    border-radius: 10px;
+}
+.indic{
+    top:17em;
+}
+
+
+  .card-text{
+      font-size: 18px;
+      
+      padding: 10px;
+      
+  }
+/*.fourth section first card (why us)..*/ 
+  .forth-sec{
+    background: url('../../../assets/images/Color-Wheel-Paints-57ec389e5f9b586c35c694e5.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 595px;
+    margin-top: 5em;
+    position: relative;
+  }
+.forth-sec::before{
+    content: '';
+    width: 100%;
+    height: 100.1%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color:black;
+	opacity: .6; 
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    
+}
+.why-font{
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+/*...............fifth section (News)...................*/
+
+.card-col-text{
+    background-color:#661c98;
+    opacity: .6; 
+    color: white;
+    padding: 2em;
+    height: 400px;
+} 
+.news-text{
+    font-size: 35px;
+    line-height: 1.5;
+}
+.news-img{
+    object-fit: fill;
+    height: 400px;
+}
+.card-col-img{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card-text{
+    padding: 10px;
+    font-size: 18px;
+}
+  /*.........map section.......*/
+ 
+
+/*..................................*/
+
+@media  (max-width: 991px){
+    .card-col-text{
+        margin-left: 0;
+        padding: 10px;
+        border: 0;
+        margin-top: 0;
+    }
+    .card-text{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .header-proChoice{
+        margin-top: 18px;
+    }
+    .indic{
+        top:13em;
+    }
+}
+
+@media  (max-width: 767px){
+    .brands-row {
+        margin-top: 2em;
+       
+    }
+    .carousel-img {
+        
+        height: 354px !important;
+        
+    }
+    
+    
+    .news-text {
+        font-size: 25px;
+        
+    }
+    .why-p{
+        font-size: 15px !important;
+        width: 283px !important;
+    }
+    .card-text{
+        
+		font-size: 14px;
+	}
+    .intro h1{
+        margin-top: 50px;
+        font-size: 2em;
+    }
+    .intro p{
+        width: 100%;
+        line-height: 1;
+        font-size: 18px;
+    }
+    .products .product {
+        padding: 10px;
+        padding-right: 20px;
+    }
+    .indic{
+        top:8em;
+    }
+    .why-font{
+        
+        font-size: 35px;
+        
+        
+    }
+}
+@media(max-width:546px){
+    .card-text{
+        font-size: 12.5px;
+        width: 202px;
+    }
+    .why-font {
+        font-size: 29px;
+    }
+}
+@media(max-width:405px){
+    .card-text{
+        font-size: 10.5px;
+        width: 150px;
+    }
+}
